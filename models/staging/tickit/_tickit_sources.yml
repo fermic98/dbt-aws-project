@@ -184,9 +184,9 @@ sources:
             data_type: int
             tests:
               - not_null
-               - relationships:
+              - relationships:
                   to: ref('stg_tickit__listings')
-                  field: listid
+                  field: list_id
           - name: sellerid
             data_type: int
             tests:
