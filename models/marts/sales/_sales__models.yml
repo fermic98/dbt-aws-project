@@ -6,3 +6,9 @@ models:
 
     - name: fct_sales
       description: All sales with details
+
+    - name: kpi_sales_per_city_category
+      description: Indicators of tickets' sales by city per each category
+
+    - name: kpi_venues_seats_utilization_rate
+      description: Indicators of the venue's seats utilization rate for each event
