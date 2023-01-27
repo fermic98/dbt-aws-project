@@ -12,3 +12,8 @@ models:
 
     - name: kpi_venues_seats_utilization_rate
       description: Indicators of the venue's seats utilization rate for each event
+      columns:
+        - name: filled_seats_percentage
+          description: number of filled seats in percentage to the total number of available seats in the venue
+          tests:
+            - test_generic_percentage_correctness

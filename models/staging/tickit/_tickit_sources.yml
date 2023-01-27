@@ -38,7 +38,7 @@ sources:
       - name: date
         description: dimension table - TICKIT dates
         external:
-          location: "s3://dbt-project-demo/raw_tickit_data/date/"
+          location: "s3://dbt-project-demo/raw_tickit_data/date/" 
           row_format: >
             serde 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
             with serdeproperties (
@@ -173,6 +173,10 @@ sources:
                 'separatorChar'='|'
             )
           table_properties: "('skip.header.line.count'='1')"
+        loaded_at_field: saletime
+        freshness:
+          warn_after: {count: 12, period: hour}
+          error_after: {count: 24, period: hour}
         columns:
           - name: saleid
             data_type: int
