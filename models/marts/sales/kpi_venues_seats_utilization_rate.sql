@@ -1,4 +1,3 @@
-{{ config(materialized='table') }}
 with sales as (
 
     select * from {{ ref('stg_tickit__sales') }}

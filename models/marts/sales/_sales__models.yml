@@ -3,12 +3,33 @@ version: 2
 models:
     - name: fct_listings
       description: All listing with details
+       - name: listing_id
+          description: primary key
+          tests:
+            - unique
+            - not_null
 
     - name: fct_sales
       description: All sales with details
+       - name: sale_id
+          description: primary key
+          tests:
+            - unique
+            - not_null
+       - name: price_paid
+         tests: 
+            - test_sale_amount
 
     - name: kpi_sales_per_city_category
       description: Indicators of tickets' sales by city per each category
+      columns: 
+        - name: tickets_sold
+          tests: 
+            - test_generic_assert_positive_value
+        - name: amount_paid
+          tests: 
+            - test_generic_assert_positive_value
+
 
     - name: kpi_venues_seats_utilization_rate
       description: Indicators of the venue's seats utilization rate for each event
