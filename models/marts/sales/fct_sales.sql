@@ -60,6 +60,7 @@ final as (
         s.sale_id,
         s.sale_time,
         d.qtr,
+        ec.event_id,
         ec.cat_group,
         ec.cat_name,
         ec.event_name,
