@@ -4,7 +4,7 @@ with users as (
     
     select * from {{ ref('stg_tickit__users') }}
 
-)
+),
 
 select 
    

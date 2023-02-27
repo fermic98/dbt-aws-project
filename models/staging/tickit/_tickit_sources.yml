@@ -79,6 +79,28 @@ sources:
           - name: holiday
             data_type: boolean
 
+      - name: interest
+        description: dimension table - TICKIT events
+        external:
+          location: "s3://dbt-project-demo/raw_tickit_data/interest/"
+          row_format: >
+            serde 'org.apache.hadoop.hive.serde2.OpenCSVSerde'
+            with serdeproperties (
+                'separatorChar'='|'
+            )
+          table_properties: "('skip.header.line.count'='1')"
+        columns:
+          - name: interestid
+            data_type: int
+            description: primary key
+            tests:
+              - unique
+              - not_null
+          - name: interestname
+            data_type: varchar(30)
+            tests:
+              - not_null
+
       - name: event
         description: dimension table - TICKIT events
         external:
