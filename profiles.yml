@@ -1,0 +1,12 @@
+dbt_aws_project:
+  outputs:
+      dev:
+        dbname: dev
+        host: redshift-cluster-dbt-project-demo.c3fcqxgngya7.eu-west-1.redshift.amazonaws.com
+        password: Dbt-project-demo-2023
+        port: 5439
+        schema: tickit_dbt
+        threads: 1
+        type: redshift
+        user: demo
+  target: dev
