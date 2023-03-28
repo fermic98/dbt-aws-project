@@ -2,14 +2,12 @@
 
 ## Index:
 
-### [Pipeline architecture](#pipeline-architecture)
-### [Network infrastructure and policies](#network-infrastructure-and-policies)
-### [Set up the project](#set-up-the-project)
-### [Implementation](#implementation)
-### [AWS services](#aws-services)
-- ###  [Roles](#roles)
-- ###  [Costs](#costs)
-###  [Resources](#resources)
+- [Pipeline architecture](#pipeline-architecture)
+- [Network infrastructure and policies](#network-infrastructure-and-policies)
+- [Set up the project](#set-up-the-project)
+- [Implementation](#implementation)
+- [AWS services and costs ](#aws-services-and-costs)
+- [Resources](#resources)
 
 ------------------------------------------------------
 ## Pipeline architecture
