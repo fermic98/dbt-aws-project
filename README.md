@@ -35,7 +35,7 @@ The above schema depicts the AWS VPC and all the internal subnets, security grou
 ### Set up AWS
 Before running dbt models we need to set-up the AWS environment
 - Restart the Redshift cluster **redshift-cluster-dbt-project-demo**
-- Schedule ECS Tasks (for dbt serverless)
+- Schedule ECS Tasks (needed  only for dbt serverless)
 
 ### Set up dbt
 Prerequisite of the system : 
