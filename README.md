@@ -42,7 +42,10 @@ Prerequisite of the system :
     requires Python and git to successfully install and run dbt Core. 
     Install Git and Python version 3.7 or higher.
 
-Clone the git-ub repository : https://github.com/fermic98/dbt-aws-project on VScode move on the dbt folder then execute 
+- Clone the git-ub repository : https://github.com/fermic98/dbt-aws-project on VScode
+- to locally run dbt, update the *profile.yml* file inside the **.dbt** folder. To do so copy and   paste the content of [profile.yml](/profiles.yml) of this repo in your local file.
+
+Now is it possible to execute from the terminal all dbt cli commands
 - dbt deps
 - dbt run
 - dbt test
